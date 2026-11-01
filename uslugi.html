@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | B&amp;B Complex, meble na wymiar Stalowa Wola</title>
+<meta name="description" content="Kuchnie, łazienki, szafy przesuwne, garderoby, zabudowy, siedziska, biurka i komody na wymiar. B&amp;B Complex, Stalowa Wola. Tel. 533 701 944.">
+<meta property="og:title" content="Usługi | B&amp;B Complex">
+<meta property="og:image" content="bb-complex-baner.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          graphite: '#1f2124',
+          'graphite-raised': '#2a2d31',
+          paper: '#eceeef',
+          'paper-raised': '#f8f9f9',
+          ink: '#17181a',
+          'ink-soft': '#565b61',
+          oak: '#b27a43',
+          'oak-dark': '#7c522a',
+          line: '#d3d6d9',
+        },
+        fontFamily: {
+          sans: ['"Public Sans"', 'sans-serif'],
+          display: ['"Red Hat Display"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body>
+
+<!-- ============ NAGŁÓWEK ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
+    <a href="index.html" class="focus-ring brand-name font-display text-lg md:text-xl leading-none whitespace-nowrap">B&amp;B Complex</a>
+    <nav class="hidden md:flex items-center gap-8 text-[0.95rem]" aria-label="Główna nawigacja">
+      <a href="index.html#o-firmie" class="nav-link">O firmie</a>
+      <a href="uslugi.html" class="nav-link" aria-current="page">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link">Realizacje</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:+48533701944" class="btn btn-light px-4 md:px-5 py-2.5 text-sm">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">533 701 944</span><span class="sm:hidden">Zadzwoń</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden btn btn-ghost w-11 h-11 !p-0" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu md:hidden absolute top-16 left-0 right-0 bg-graphite border-t border-white/10" aria-label="Menu mobilne">
+    <div class="px-4 py-4 flex flex-col text-lg font-display">
+      <a href="index.html#o-firmie" class="py-3 border-b border-white/10">O firmie</a>
+      <a href="uslugi.html" class="py-3 border-b border-white/10" aria-current="page">Usługi</a>
+      <a href="index.html#realizacje" class="py-3 border-b border-white/10">Realizacje</a>
+      <a href="#kontakt" class="py-3">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO PODSTRONY ============ -->
+<section class="relative overflow-hidden bg-graphite text-white">
+  <img src="images/7.webp" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+  <div class="absolute inset-0 hero-shade" aria-hidden="true"></div>
+  <svg class="hero-lines absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="0" y1="20" x2="40" y2="0" />
+    <line x1="62" y1="0" x2="100" y2="40" />
+    <line x1="10" y1="100" x2="38" y2="40" />
+  </svg>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-8 pt-36 md:pt-44 pb-20 md:pb-28">
+    <div class="bracket px-5 sm:px-10 pb-6 max-w-xl">
+      <h1 class="bracket-title font-display text-5xl md:text-7xl px-4 inline-block">Usługi</h1>
+      <p class="text-white/80 -mt-2 md:-mt-4">Meble na wymiar do każdego pomieszczenia. Pomiar, projekt, produkcja i montaż w jednym miejscu.</p>
+    </div>
+    <nav class="mt-10 flex flex-wrap gap-2" aria-label="Przejdź do usługi">
+      <a href="#kuchnie" class="btn btn-ghost px-4 py-2 text-sm">Kuchnie</a>
+      <a href="#lazienki" class="btn btn-ghost px-4 py-2 text-sm">Łazienki</a>
+      <a href="#szafy" class="btn btn-ghost px-4 py-2 text-sm">Szafy przesuwne</a>
+      <a href="#garderoby" class="btn btn-ghost px-4 py-2 text-sm">Garderoby</a>
+      <a href="#zabudowy" class="btn btn-ghost px-4 py-2 text-sm">Zabudowy i siedziska</a>
+      <a href="#biurka" class="btn btn-ghost px-4 py-2 text-sm">Biurka i komody</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ============ KARTY USŁUG ============ -->
+<section class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col gap-10 md:gap-14">
+
+    <article id="kuchnie" class="reveal surface-raised grid md:grid-cols-2 overflow-hidden scroll-mt-24">
+      <div class="grid grid-cols-2 gap-1 bg-line min-h-[18rem]">
+        <img src="images/11.webp" alt="Grafitowa kuchnia z białym blatem i podświetlaną wnęką z dębu" class="w-full h-full object-cover" loading="lazy">
+        <img src="images/13.webp" alt="Biała kuchnia z przeszklonymi szafkami górnymi" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-12 flex flex-col">
+        <div class="rule-oak mb-5"></div>
+        <h2 class="font-display font-medium text-3xl md:text-4xl">Kuchnie na wymiar</h2>
+        <p class="mt-4 text-ink-soft">Kuchnia to mebel, z którego korzystasz codziennie, dlatego projektujemy ją pod układ pomieszczenia, przyłącza i Twój sposób gotowania. Wykonujemy zabudowy nowoczesne i klasyczne, w połysku, macie lub z frontami frezowanymi.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[0.95rem]">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Zabudowy w linii, w L, w U</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Wyspy i półwyspy z barem</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Słupki pod AGD do zabudowy</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Oświetlenie LED pod szafkami</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-dark px-6 py-3 mt-8 self-start">Zapytaj o kuchnię <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="lazienki" class="reveal surface-raised grid md:grid-cols-2 overflow-hidden scroll-mt-24">
+      <div class="md:order-2 grid grid-cols-2 gap-1 bg-line min-h-[18rem]">
+        <img src="images/1.webp" alt="Granatowa szafka pod umywalkę w łazience z marmurową ścianą" class="w-full h-full object-cover" loading="lazy">
+        <img src="images/10.webp" alt="Zabudowa pralki z blatem i umywalką nablatową" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-12 flex flex-col">
+        <div class="rule-oak mb-5"></div>
+        <h2 class="font-display font-medium text-3xl md:text-4xl">Meble łazienkowe</h2>
+        <p class="mt-4 text-ink-soft">W łazience liczy się każdy centymetr. Szafki dopasowujemy do wnęk, stelaży i pionów, a materiały dobieramy tak, by dobrze znosiły wilgoć.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[0.95rem]">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Szafki pod umywalkę</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Słupki i szafki wiszące</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Zabudowa pralki i suszarki</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Blaty pod umywalki nablatowe</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-dark px-6 py-3 mt-8 self-start">Zapytaj o łazienkę <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="szafy" class="reveal surface-raised grid md:grid-cols-2 overflow-hidden scroll-mt-24">
+      <div class="grid grid-cols-2 gap-1 bg-line min-h-[18rem]">
+        <img src="images/9.webp" alt="Szafa przesuwna z czarną ramą, matowym i czarnym szkłem" class="w-full h-full object-cover" loading="lazy">
+        <img src="images/15.webp" alt="Szafa wnękowa z lustrzanymi drzwiami przesuwnymi" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-12 flex flex-col">
+        <div class="rule-oak mb-5"></div>
+        <h2 class="font-display font-medium text-3xl md:text-4xl">Szafy przesuwne</h2>
+        <p class="mt-4 text-ink-soft">Szafa wnękowa wykorzystuje całą przestrzeń od podłogi do sufitu. Drzwi wykonujemy z płyty, lustra lub szkła w aluminiowej ramie, a wnętrze układamy według Twoich potrzeb.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[0.95rem]">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Drzwi lustrzane i szklane</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Fronty z płyty w dekorze drewna</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Szuflady, półki, drążki</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Otwarte regały przy szafie</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-dark px-6 py-3 mt-8 self-start">Zapytaj o szafę <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="garderoby" class="reveal surface-raised grid md:grid-cols-2 overflow-hidden scroll-mt-24">
+      <div class="md:order-2 grid grid-cols-2 gap-1 bg-line min-h-[18rem]">
+        <img src="images/24.webp" alt="Garderoba z drążkami na ubrania i półkami" class="w-full h-full object-cover" loading="lazy">
+        <img src="images/3.webp" alt="Szafa z dębowymi drzwiami przesuwnymi i szufladami" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-12 flex flex-col">
+        <div class="rule-oak mb-5"></div>
+        <h2 class="font-display font-medium text-3xl md:text-4xl">Garderoby</h2>
+        <p class="mt-4 text-ink-soft">Garderoba otwarta lub zamykana, w osobnym pomieszczeniu albo we wnęce sypialni. Rozplanujemy ją tak, by każda rzecz miała swoje miejsce: długie ubrania, buty, walizki i drobiazgi.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[0.95rem]">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Garderoby otwarte i zamykane</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Drążki na różnych wysokościach</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Półki na buty i szuflady</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Siedzisko lub ławka w środku</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-dark px-6 py-3 mt-8 self-start">Zapytaj o garderobę <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="zabudowy" class="reveal surface-raised grid md:grid-cols-2 overflow-hidden scroll-mt-24">
+      <div class="grid grid-cols-2 gap-1 bg-line min-h-[18rem]">
+        <img src="images/4.webp" alt="Tapicerowane siedzisko narożne w przedpokoju obok szafy" class="w-full h-full object-cover" loading="lazy">
+        <img src="images/23.webp" alt="Wysoka biała zabudowa w połysku z lodówką i piekarnikiem" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-12 flex flex-col">
+        <div class="rule-oak mb-5"></div>
+        <h2 class="font-display font-medium text-3xl md:text-4xl">Zabudowy i siedziska</h2>
+        <p class="mt-4 text-ink-soft">Zabudowujemy wnęki, skosy i przedpokoje, łącząc szafy z siedziskami i panelami tapicerowanymi. Dzięki temu nawet trudne miejsca stają się wygodne i uporządkowane.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[0.95rem]">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Meble do przedpokoju</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Siedziska i panele tapicerowane</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Zabudowy wnęk i skosów</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Wysokie zabudowy od podłogi do sufitu</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-dark px-6 py-3 mt-8 self-start">Zapytaj o zabudowę <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+    <article id="biurka" class="reveal surface-raised grid md:grid-cols-2 overflow-hidden scroll-mt-24">
+      <div class="md:order-2 grid grid-cols-2 gap-1 bg-line min-h-[18rem]">
+        <img src="images/14.webp" alt="Dębowe półki ścienne i blat z lampą wiszącą" class="w-full h-full object-cover" loading="lazy">
+        <img src="images/12.webp" alt="Grafitowe szafki z miedzianymi uchwytami i blatem na nodze" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="p-7 md:p-12 flex flex-col">
+        <div class="rule-oak mb-5"></div>
+        <h2 class="font-display font-medium text-3xl md:text-4xl">Biurka, komody i półki</h2>
+        <p class="mt-4 text-ink-soft">Biurko dopasowane do wnęki, komoda pod telewizor albo półki w tym samym dekorze co reszta mebli. Mniejsze meble robimy z taką samą starannością jak całe zabudowy.</p>
+        <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[0.95rem]">
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Biurka do domu i biura</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Komody i szafki RTV</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Półki ścienne i regały</li>
+          <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-oak shrink-0 mt-0.5"></i>Blaty barowe i parapetowe</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-dark px-6 py-3 mt-8 self-start">Zapytaj o mebel <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="grain py-20 md:py-24 bg-graphite text-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+    <div class="bracket px-6 sm:px-10 pb-8 max-w-lg">
+      <h2 class="bracket-title font-display text-4xl md:text-5xl px-4 inline-block">Zadzwoń</h2>
+      <div class="flex flex-col gap-3 -mt-2">
+        <a href="tel:+48533701944" class="focus-ring font-display font-semibold text-3xl md:text-4xl tracking-tight hover:text-oak transition-colors">533 701 944</a>
+        <a href="tel:+48575427034" class="focus-ring font-display font-semibold text-3xl md:text-4xl tracking-tight hover:text-oak transition-colors">575 427 034</a>
+      </div>
+    </div>
+    <div class="text-white/75">
+      <p class="text-lg text-white">Umówimy pomiar i przygotujemy wycenę mebli.</p>
+      <p class="mt-5 flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 shrink-0 mt-1"></i>Józefa Poniatowskiego 82, 37-450 Stalowa Wola</p>
+      <p class="mt-3 flex gap-3"><i data-lucide="clock" class="w-5 h-5 shrink-0 mt-1"></i>Poniedziałek do piątku, 8:00-16:00</p>
+      <a href="index.html#kontakt" class="nav-link inline-flex items-center gap-2 mt-6 text-white">Mapa i godziny otwarcia <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ STOPKA ============ -->
+<footer class="bg-[#161719] text-white/60 text-sm">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div>
+      <p class="font-display text-white text-lg">B&amp;B Complex</p>
+      <p class="mt-1">Meble na wymiar, Stalowa Wola</p>
+    </div>
+    <nav class="flex flex-wrap gap-x-6 gap-y-2" aria-label="Stopka">
+      <a href="index.html#o-firmie" class="nav-link">O firmie</a>
+      <a href="uslugi.html" class="nav-link">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link">Realizacje</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <p>&copy; <span data-year>2026</span> B&amp;B Complex. Wszelkie prawa zastrzeżone.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
